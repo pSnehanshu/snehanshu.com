@@ -1,6 +1,7 @@
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/assets/favicon.ico");
+  eleventyConfig.addPassthroughCopy("./src/assets/media");
   eleventyConfig.addWatchTarget("_site/assets/main.css");
 
   return {
