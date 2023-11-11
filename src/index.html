@@ -6,7 +6,7 @@ layout: layout.html
   <img
     src="/assets/media/sp-dp.jpg"
     alt="Snehanshu"
-    class="mb-4 h-24 w-24 rounded-full border-black transition-all hover:border-4"
+    class="mb-4 h-24 w-24 rounded-full border-black transition-all hover:h-32 hover:w-32 hover:border-4"
   />
 
   <h1 class="text-4xl">
@@ -22,5 +22,20 @@ layout: layout.html
     I can create software for you using my skills and experience
   </p>
 
-  <p></p>
+  <div class="mt-10 max-w-6xl overflow-hidden text-center">
+    <h2 class="text-lg">Technologies I have worked with</h2>
+
+    <div class="flex flex-wrap justify-center p-4">
+      {% for skill in skills %}
+      <a href="{{ skill.link }}" target="_blank" class="group p-2">
+        <img
+          src="{{ skill.icon }}"
+          alt="{{ skill.name }}"
+          title="{{ skill.name }}"
+          class="h-12 transition-all group-hover:h-24"
+        />
+      </a>
+      {% endfor %}
+    </div>
+  </div>
 </div>

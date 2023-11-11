@@ -1,0 +1,109 @@
+{
+  "skills": [
+    {
+      "name": "Node.js",
+      "icon": "/assets/media/skills/nodejs.png",
+      "link": "https://nodejs.org"
+    },
+    {
+      "name": "JavaScript",
+      "icon": "/assets/media/skills/js.png",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+    },
+    {
+      "name": "TypeScript",
+      "icon": "/assets/media/skills/ts.png",
+      "link": "https://www.typescriptlang.org/"
+    },
+    {
+      "name": "PHP",
+      "icon": "/assets/media/skills/php.png",
+      "link": "https://php.net"
+    },
+    {
+      "name": "Nest.js",
+      "icon": "/assets/media/skills/nestjs.png",
+      "link": "https://nestjs.com/"
+    },
+    {
+      "name": "Express",
+      "icon": "/assets/media/skills/Expressjs.png",
+      "link": "https://expressjs.com/"
+    },
+    {
+      "name": "tRPC",
+      "icon": "/assets/media/skills/trpc.png",
+      "link": "https://trpc.io"
+    },
+    {
+      "name": "Prisma",
+      "icon": "/assets/media/skills/prisma.svg",
+      "link": "https://prisma.io"
+    },
+    {
+      "name": "Sequelize",
+      "icon": "/assets/media/skills/sequelize.png",
+      "link": "https://sequelize.org"
+    },
+    {
+      "name": "PostgreSQL",
+      "icon": "/assets/media/skills/postgres.png",
+      "link": "https://www.postgresql.org/"
+    },
+    {
+      "name": "MySQL",
+      "icon": "/assets/media/skills/mysql-logo.svg",
+      "link": "https://www.mysql.com/"
+    },
+    {
+      "name": "SQLite",
+      "icon": "/assets/media/skills/sqlite.png",
+      "link": "https://www.sqlite.org"
+    },
+    {
+      "name": "React",
+      "icon": "/assets/media/skills/reactjs.png",
+      "link": "https://react.dev/"
+    },
+    {
+      "name": "Vue.js",
+      "icon": "/assets/media/skills/vue.png",
+      "link": "https://vuejs.org/"
+    },
+    {
+      "name": "React Native",
+      "icon": "/assets/media/skills/react-native.webp",
+      "link": "https://reactnative.dev/"
+    },
+    {
+      "name": "Expo",
+      "icon": "/assets/media/skills/expo.png",
+      "link": "https://expo.dev/"
+    },
+    {
+      "name": "Tailwind CSS",
+      "icon": "/assets/media/skills/tailwind.svg",
+      "link": "https://tailwindcss.com/"
+    },
+    {
+      "name": "OCPP",
+      "icon": "/assets/media/skills/ocpp.png",
+      "link": "https://www.openchargealliance.org/protocols/ocpp-201/"
+    },
+    {
+      "name": "OCPI",
+      "icon": "/assets/media/skills/ocpi.png",
+      "link": "https://evroaming.org/"
+    },
+    {
+      "name": "Android Enterprise",
+      "icon": "/assets/media/skills/Andriod-Enterprise.png",
+      "link": "https://www.android.com/intl/en_in/enterprise/"
+    },
+    {
+      "name": "AWS",
+      "icon": "/assets/media/skills/aws.png",
+      "link": "https://aws.amazon.com"
+    }
+  ]
+}
