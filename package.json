@@ -1,0 +1,22 @@
+{
+  "name": "snehanshu.com",
+  "version": "1.0.0",
+  "description": "Snehanshu's personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pSnehanshu/snehanshu.com.git"
+  },
+  "author": "Snehanshu Phukon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pSnehanshu/snehanshu.com/issues"
+  },
+  "homepage": "https://github.com/pSnehanshu/snehanshu.com#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
