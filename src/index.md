@@ -1,5 +1,5 @@
 ---
-layout: layout.ejs
+layout: layout.html
 ---
 
 # Hello world!
