@@ -61,6 +61,11 @@
       "link": "https://www.sqlite.org"
     },
     {
+      "name": "Next.js",
+      "icon": "/assets/media/skills/nextjs.png",
+      "link": "https://nextjs.org/"
+    },
+    {
       "name": "React",
       "icon": "/assets/media/skills/reactjs.png",
       "link": "https://react.dev/"
