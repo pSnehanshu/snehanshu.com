@@ -15,6 +15,7 @@ module.exports = function (eleventyConfig) {
         collapseWhitespace: true,
         quoteCharacter: "'",
         maxLineLength: 200,
+        minifyJS: true,
       });
       return minified;
     }
