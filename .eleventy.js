@@ -23,6 +23,18 @@ module.exports = function (eleventyConfig) {
     return content;
   });
 
+  eleventyConfig.addShortcode("post_url", function (post_url) {
+    return `/blog/${post_url}`;
+  });
+
+  eleventyConfig.addShortcode("post_media_url", function (file_name) {
+    return `/assets/media/post-media/${file_name}`;
+  });
+
+  eleventyConfig.setLiquidOptions({
+    jsTruthy: true,
+  });
+
   return {
     dir: {
       input: "src",

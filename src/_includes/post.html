@@ -10,6 +10,7 @@ layout: layout.html
   {% endif %}
 </div>
 
+{% if img %}
 <div class="flex justify-center">
   <figure class="relative overflow-hidden rounded-md">
     <img
@@ -18,15 +19,18 @@ layout: layout.html
       alt="{{ img }}"
     />
 
+    {% if caption %}
     <figcaption
       class="absolute right-0 top-0 bg-gray-900 bg-opacity-60 p-1 px-2 text-white"
     >
       {{ caption }}
     </figcaption>
+    {% endif %}
   </figure>
 </div>
+{% endif %}
 
-<div class="mb-4 flex justify-center">
+<div class="mt-8 mb-4 flex justify-center">
   <article class="prose prose-lg hover:prose-a:text-blue-600">
     {{ content }}
   </article>
