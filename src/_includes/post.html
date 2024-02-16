@@ -1,0 +1,33 @@
+---
+layout: layout.html
+---
+
+<h1 class="my-8 mb-4 text-center text-4xl">{{ title }}</h1>
+
+<div class="mb-4 text-center text-lg">
+  {% if date %}
+  <span>{{ date | date: "%a, %e %B %Y" }}</span>
+  {% endif %}
+</div>
+
+<div class="flex justify-center">
+  <figure class="relative overflow-hidden rounded-md">
+    <img
+      class="object-cover"
+      src="/assets/media/post-media/{{ img }}"
+      alt="{{ img }}"
+    />
+
+    <figcaption
+      class="absolute right-0 top-0 bg-gray-900 bg-opacity-60 p-1 px-2 text-white"
+    >
+      {{ caption }}
+    </figcaption>
+  </figure>
+</div>
+
+<div class="mb-4 flex justify-center">
+  <article class="prose prose-lg hover:prose-a:text-blue-600">
+    {{ content }}
+  </article>
+</div>
