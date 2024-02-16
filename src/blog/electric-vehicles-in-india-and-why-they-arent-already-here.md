@@ -4,6 +4,7 @@ title: "Electric vehicles in India, and why they aren’t already here?"
 img: alternative-auto-automobile-battery-110844.jpg
 caption: Photo by Mike from Pexels
 date: 2018-06-14
+tags: post
 ---
 
 > Originally posted on [Medium.com](https://medium.com/@snehanshuphukon/electric-vehicles-in-india-and-why-they-arent-already-here-16194bbcbc53)

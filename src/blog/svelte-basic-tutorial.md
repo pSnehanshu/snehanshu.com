@@ -3,6 +3,7 @@ layout: post
 title:  "Svelte, the framework without any framework - A basic tutorial"
 img: svelte.png
 date: 2020-03-11
+tags: post
 ---
 
 # What is Svelte?

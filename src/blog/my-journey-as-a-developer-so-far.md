@@ -4,6 +4,7 @@ title: "My journey as a developer so far…"
 img: gray-laptop-computer-showing-html-codes-in-shallow-focus-160107.jpg
 caption: Photo by Negative Space from Pexels
 date: 2019-06-23
+tags: post
 ---
 
 > Originally posted on [Medium.com](https://medium.com/@snehanshuphukon/my-journey-as-a-developer-so-far-24d333028f7d)

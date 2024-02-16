@@ -4,6 +4,7 @@ title:  "What is Open Charge Point Protocol?"
 img: white-car-charging-3846205.jpg
 caption: Photo by Rathaphon Nanthapreecha from Pexels
 date: 2020-04-03
+tags: post
 ---
 
 The [Electric Vehicle]({% post_url "electric-vehicles-in-india-and-why-they-arent-already-here" %}), or EV for short, is the new kind of vehicles that will slowly phase out the traditional petrol and diesel-based vehicles. The pros are immense - environment friendly, low maintenance cost, low sound pollution, etc. The only major con is the availability of public charging points. Although this is improving with every passing day, there is still a long time before an average buyer will become confident enough to choose EV over a traditional vehicle.
