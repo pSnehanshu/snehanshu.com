@@ -24,7 +24,7 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addShortcode("post_url", function (post_url) {
-    return `/blog/${post_url}`;
+    return `/blog/${post_url}/`;
   });
 
   eleventyConfig.addShortcode("post_media_url", function (file_name) {

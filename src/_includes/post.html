@@ -21,22 +21,18 @@ layout: layout.html
 </div>
 
 {% if img %}
-<div class="flex justify-center">
-  <figure class="relative overflow-hidden rounded-md">
+<div>
+  <div class="flex max-h-80 justify-center">
     <img
-      class="object-cover"
       src="/assets/media/post-media/{{ img }}"
-      alt="{{ img }}"
+      alt="Your Image"
+      class="object-contain"
     />
+  </div>
 
-    {% if caption %}
-    <figcaption
-      class="absolute right-0 top-0 bg-gray-900 bg-opacity-60 p-1 px-2 text-white"
-    >
-      {{ caption }}
-    </figcaption>
-    {% endif %}
-  </figure>
+  {% if caption %}
+  <p class="text-center">{{ caption }}</p>
+  {% endif %}
 </div>
 {% endif %}
 
