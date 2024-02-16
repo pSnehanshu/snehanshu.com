@@ -3,6 +3,7 @@ layout: post
 title: "My journey as a developer so far - Part 2"
 img: pexels-sharefaith-1248418.jpg
 caption: Photo by Sharefaith from Pexels
+date: 2022-03-13
 tags: post
 ---
 
