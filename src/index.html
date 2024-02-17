@@ -79,7 +79,11 @@ layout: layout.html
     <ul class="p-4">
       {%- for post in collections.post reversed -%}
       <li class="mb-2">
-        I wrote <a class="underline hover:text-blue-600" href="{{ post.url }}">{{ post.data.title }}</a> on {{ post.date | date: "%Y-%b-%d" }}
+        I wrote
+        <a class="underline hover:text-blue-600" href="{{ post.url }}">
+          {{ post.data.title }}
+        </a>
+        on a {% funny_day post.date %}
       </li>
       {%- endfor -%}
     </ul>

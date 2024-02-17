@@ -31,6 +31,31 @@ module.exports = function (eleventyConfig) {
     return `/assets/media/post-media/${file_name}`;
   });
 
+  eleventyConfig.addShortcode("funny_day", function (date) {
+    if (!(date instanceof Date)) {
+      throw new TypeError("funny_day only accepts dates");
+    }
+
+    const day = date.getDay();
+
+    switch (day) {
+      case 0:
+        return "Sunny Sunday";
+      case 1:
+        return "Mighty Monday";
+      case 2:
+        return "Troublesome Tuesday";
+      case 3:
+        return "Windy Wednesday";
+      case 4:
+        return "Thirsty Thursday";
+      case 5:
+        return "Friendly Friday";
+      case 6:
+        return "Sexy Saturday";
+    }
+  });
+
   eleventyConfig.setLiquidOptions({
     jsTruthy: true,
   });
