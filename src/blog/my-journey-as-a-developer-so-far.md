@@ -16,7 +16,7 @@ tags: post
 > how simple Digital Ocean is and how innovative ZEIT Now is.
 > Currently I am doing freelance work as well as pursuing my graduation.
 > If you think I can help you in any way, please don’t hesitate to let me know.
-> You can reach me via my email id [{{ site.email }}](mailto:{{ site.email }})
+> You can reach me via my email id [{{ pkg.email }}](mailto:{{ pkg.email }})
 
 My journey as a developer started when I somehow stumbled upon the following video
 
@@ -119,6 +119,6 @@ nothing better than it.
 I am looking forward to adding more to this article in the future as more and more things happen.
 
 > I am amazed by your patience. Hats off to you. If you would like me to work on your projects,
-> contact me by email [{{ site.email }}](mailto:{{ site.email }}).
+> contact me by email [{{ pkg.email }}](mailto:{{ pkg.email }}).
 
 > Read part 2 [here]({% post_url "my-journey-as-a-developer-so-far-part-2" %})

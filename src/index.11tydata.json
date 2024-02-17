@@ -109,6 +109,11 @@
       "name": "AWS",
       "icon": "/assets/media/skills/aws.png",
       "link": "https://aws.amazon.com"
+    },
+    {
+      "name": "Eleventy",
+      "icon": "/assets/media/skills/11ty.svg",
+      "link": "https://11ty.dev"
     }
   ]
 }

@@ -13,6 +13,6 @@ I am a developer, I build web applications, and on this blog, I plan to write ab
 
 This is not the first blog post I have ever written, the two other posts, posted before this, were written years ago, in other places. This post is the first post written directly on this blog. So here I am, officially launching my blog, snehanshu.com (I kind of like this domain). I will keep writing on this blog as regularly as possible about things I am interested in, mainly web development, OCPP (electric vehicles), traveling and learning languages (I'm learning German, yay!).
 
-Also, I am a freelancer, so if you think my skills may help your project, feel free to shoot me an email at [{{ site.email }}](mailto:{{ site.email }}).
+Also, I am a freelancer, so if you think my skills may help your project, feel free to shoot me an email at [{{ pkg.email }}](mailto:{{ pkg.email }}).
 
 See you soon!
