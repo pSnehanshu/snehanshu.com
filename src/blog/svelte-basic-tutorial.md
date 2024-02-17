@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Svelte, the framework without any framework - A basic tutorial"
+title: "Svelte, the framework without any framework - A basic tutorial"
 img: svelte.png
 date: 2020-03-11
 tags: post
@@ -26,30 +26,41 @@ In short, Svelte is a compiler that generates JavaScript, while React and Vue ar
 
 # How to install it?
 
-* First you will need Node.js.
-    * Check if you already have Node.js installed by running this command
+- First you will need Node.js.
+  - Check if you already have Node.js installed by running this command
+
 ```bash
 $ node --version
 ```
+
     * If error occurs, find appropriate instructions for installing Node.js based on your OS [here](https://nodejs.org/en/download/).
-* Next run the following command to get the Svelte project template
+
+- Next run the following command to get the Svelte project template
+
 ```bash
 $ npx degit sveltejs/template my-svelte-project
 ```
-* Then switch to the project directory
+
+- Then switch to the project directory
+
 ```bash
 $ cd my-svelte-project
 ```
-* Install all the dependencies from NPM
+
+- Install all the dependencies from NPM
+
 ```bash
 $ npm install
 ```
-* Test the project in your browser
+
+- Test the project in your browser
+
 ```bash
 $ npm run dev
 ```
-* Open [http://localhost:5000](http://localhost:5000) in your browser and you should see the following
-![Svelte initial screen]({% post_media_url "svelte-tutorial/initial-installation.png" %})
+
+- Open [http://localhost:5000](http://localhost:5000) in your browser and you should see the following
+  ![Svelte initial screen]({% post_media_url "svelte-tutorial/initial-installation.png" %})
 
 Now that you have Svelte running, let's see how to use it.
 
@@ -65,15 +76,15 @@ Svelte components are files with `.svelte` extension. It is just a simple HTML f
 
 ```html
 <script>
-let name = 'Rohit';
+  let name = "Rohit";
 </script>
 
 <style>
-p {
-  color: purple;
-  font-family: 'Comic Sans MS', cursive;
-  font-size: 2em;
-}
+  p {
+    color: purple;
+    font-family: "Comic Sans MS", cursive;
+    font-size: 2em;
+  }
 </style>
 
 <p>Hello {name}</p>
@@ -87,24 +98,24 @@ Now let's modify the data `name` using a function.
 
 ```html
 <script>
-let name = 'Rohit';
+  let name = "Rohit";
 
-function changeName() {
-  name = 'Ashish';
-}
+  function changeName() {
+    name = "Ashish";
+  }
 </script>
 
 <style>
-p {
-  color: purple;
-  font-family: 'Comic Sans MS', cursive;
-  font-size: 2em;
-}
+  p {
+    color: purple;
+    font-family: "Comic Sans MS", cursive;
+    font-size: 2em;
+  }
 </style>
 
 <p>Hello {name}</p>
 
-<button on:click={changeName}>Change name</button>
+<button on:click="{changeName}">Change name</button>
 ```
 
 ![Name changes on clicking the button]({% post_media_url "svelte-tutorial/Screencast-2020-03-11-164019.gif" %})
@@ -115,27 +126,27 @@ Then on clicking the button, we will just do `name = inputName`.
 
 ```html
 <script>
-let name = 'Rohit';
-let inputName = '';
+  let name = "Rohit";
+  let inputName = "";
 
-function changeName() {
-  name = inputName;
-}
+  function changeName() {
+    name = inputName;
+  }
 </script>
 
 <style>
-p {
-  color: purple;
-  font-family: 'Comic Sans MS', cursive;
-  font-size: 2em;
-}
+  p {
+    color: purple;
+    font-family: "Comic Sans MS", cursive;
+    font-size: 2em;
+  }
 </style>
 
 <p>Hello {name}</p>
 
-<input type="text" bind:value="{inputName}">
+<input type="text" bind:value="{inputName}" />
 
-<button on:click={changeName}>Change name</button>
+<button on:click="{changeName}">Change name</button>
 ```
 
 ![Change name from input]({% post_media_url "svelte-tutorial/Screencast-2020-03-11-165008(1).gif" %})
@@ -144,23 +155,22 @@ Instead of changing the name on clicking the button, we can directly change the 
 text box itself. Instead of binding it to `inputName`, directly bind it to `name`. Now we neither
 need the `inputName` variable, the `changeName` function, nor the button.
 
-
 ```html
 <script>
-let name = 'Rohit';
+  let name = "Rohit";
 </script>
 
 <style>
-p {
-  color: purple;
-  font-family: 'Comic Sans MS', cursive;
-  font-size: 2em;
-}
+  p {
+    color: purple;
+    font-family: "Comic Sans MS", cursive;
+    font-size: 2em;
+  }
 </style>
 
 <p>Hello {name}</p>
 
-<input type="text" bind:value="{name}">
+<input type="text" bind:value="{name}" />
 ```
 
 The UI updates as you type on the text box.
@@ -185,38 +195,37 @@ We have the following data, it is a list of websites with their founder's name.
 We will take a website name as input from a text box, and then show the founder's name.
 If the website doesn't exist in our list, we will show that we don't know the founder.
 
-
 ```html
 <script>
-const data = {
-  "facebook.com": "Mark Zuckerberg",
-  "google.com": "Larry Page",
-  "paypal.com": "Peter Thiel",
-  "snehanshu.com": "Snehanshu Phukon",
-  "ma.tt": "Matt Mullenweg",
-  "paytm.com": "Vijay Shekhar Sharma"
-};
+  const data = {
+    "facebook.com": "Mark Zuckerberg",
+    "google.com": "Larry Page",
+    "paypal.com": "Peter Thiel",
+    "snehanshu.com": "Snehanshu Phukon",
+    "ma.tt": "Matt Mullenweg",
+    "paytm.com": "Vijay Shekhar Sharma",
+  };
 
-let website = '';
+  let website = "";
 </script>
 
 <style>
-p {
-  color: purple;
-  font-family: 'Comic Sans MS', cursive;
-  font-size: 2em;
-}
+  p {
+    color: purple;
+    font-family: "Comic Sans MS", cursive;
+    font-size: 2em;
+  }
 </style>
 
 {#if website.length < 1}
-	<p>Please type a website name</p>
+<p>Please type a website name</p>
 {:else if data[website]}
-	<p>Founder of <u>{website}</u> is <b>{data[website]}</b></p>
+<p>Founder of <u>{website}</u> is <b>{data[website]}</b></p>
 {:else}
-	<p>We don't know about the founder of <u>{website}</u></p>
+<p>We don't know about the founder of <u>{website}</u></p>
 {/if}
 
-<input type="text" bind:value="{website}" placeholder="Type website name">
+<input type="text" bind:value="{website}" placeholder="Type website name" />
 ```
 
 ![if-else demonstration]({% post_media_url "svelte-tutorial/Screencast-2020-03-11-172020.gif" %})
@@ -238,23 +247,23 @@ We are going to display this list as an [unordered list](https://www.w3schools.c
 
 ```html
 <script>
-const websites = [
-  "facebook.com",
-  "google.com",
-  "paypal.com",
-  "snehanshu.com",
-  "ma.tt",
-  "paytm.com"
-];
+  const websites = [
+    "facebook.com",
+    "google.com",
+    "paypal.com",
+    "snehanshu.com",
+    "ma.tt",
+    "paytm.com",
+  ];
 
-let website = '';
+  let website = "";
 </script>
 
 <h2>List of Websites</h2>
 <ul>
-{#each websites as website}
-	<li>{website}</li>
-{/each}
+  {#each websites as website}
+  <li>{website}</li>
+  {/each}
 </ul>
 ```
 

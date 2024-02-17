@@ -16,4 +16,3 @@ This is not the first blog post I have ever written, the two other posts, posted
 Also, I am a freelancer, so if you think my skills may help your project, feel free to shoot me an email at [{{ site.email }}](mailto:{{ site.email }}).
 
 See you soon!
-

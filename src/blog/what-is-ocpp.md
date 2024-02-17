@@ -1,6 +1,6 @@
 ---
 layout: post.html
-title:  "What is Open Charge Point Protocol?"
+title: "What is Open Charge Point Protocol?"
 img: white-car-charging-3846205.jpg
 caption: Photo by Rathaphon Nanthapreecha from Pexels
 date: 2020-04-03
@@ -27,19 +27,19 @@ To avoid confusion, the version numbers are always suffixed with an "s" or "j", 
 
 I'm not a big fan of SOAP, I will write down some disadvantages of SOAP from the top of my head.
 
-* SOAP uses [XML](https://en.wikipedia.org/wiki/XML) to represent data, which is very bulky, not good for charge points which may have unreliable internet connectivity.
+- SOAP uses [XML](https://en.wikipedia.org/wiki/XML) to represent data, which is very bulky, not good for charge points which may have unreliable internet connectivity.
 
-* SOAP requires both the backend and the charge point to act as servers to facilitate two-way communication. This is also bad because it eliminates the possibility of operating several charge points behind the same router, because to become a server, each charge points will require unique IP addresses, which is costly.
+- SOAP requires both the backend and the charge point to act as servers to facilitate two-way communication. This is also bad because it eliminates the possibility of operating several charge points behind the same router, because to become a server, each charge points will require unique IP addresses, which is costly.
 
-* SOAP is an old and outdated technology invented at Microsoft. Modern developers don't bother learning it (including me ;-) ). If your solution is based on SOAP, you may have a hard time finding good developers.
+- SOAP is an old and outdated technology invented at Microsoft. Modern developers don't bother learning it (including me ;-) ). If your solution is based on SOAP, you may have a hard time finding good developers.
 
 Therefore I am not going to discuss how the SOAP versions work, because neither do I know. JSON-over-WebSocket versions overcome all of the above shortcomings.
 
-* As the name suggests, it uses [JSON](https://www.json.org/json-en.html) to represent data, which is way much slimmer than XML.
+- As the name suggests, it uses [JSON](https://www.json.org/json-en.html) to represent data, which is way much slimmer than XML.
 
-* It relies on [websocket](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API) for two-way communication, which requires only one entity to act as a server, which in OCPP's case is the backend.
+- It relies on [websocket](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API) for two-way communication, which requires only one entity to act as a server, which in OCPP's case is the backend.
 
-* JSON-over-Websocket is a very modern technology and most modern apps already use it. You will find plenty of good developers.
+- JSON-over-Websocket is a very modern technology and most modern apps already use it. You will find plenty of good developers.
 
 Creators of OCPP also realized their mistake, and therefore the latest version only supports JSON-over-Websocket.
 
