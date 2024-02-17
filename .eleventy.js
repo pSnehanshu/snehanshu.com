@@ -60,6 +60,56 @@ module.exports = function (eleventyConfig) {
     jsTruthy: true,
   });
 
+  // eleventyConfig.addShortcode(
+  //   "prev_post",
+  //   function (currentPostSlug, allPosts) {
+  //     const currentPostIndex = allPosts.findIndex(
+  //       (p) => p.fileSlug === currentPostSlug,
+  //     );
+
+  //     if (currentPostIndex < 0) {
+  //       throw new Error(
+  //         `${currentPostSlug} wan't found in the posts collection`,
+  //       );
+  //     }
+
+  //     if (currentPostIndex === 0) {
+  //       return "";
+  //     }
+
+  //     const prevPost = allPosts.at(currentPostIndex - 1);
+
+  //     if (prevPost) {
+  //       return `<a href="${prevPost.url}">${prevPost.data.title}</a>`;
+  //     }
+
+  //     return "";
+  //   },
+  // );
+
+  // eleventyConfig.addShortcode(
+  //   "next_post",
+  //   function (currentPostSlug, allPosts) {
+  //     const currentPostIndex = allPosts.findIndex(
+  //       (p) => p.fileSlug === currentPostSlug,
+  //     );
+
+  //     if (currentPostIndex < 0) {
+  //       throw new Error(
+  //         `${currentPostSlug} wan't found in the posts collection`,
+  //       );
+  //     }
+
+  //     const prevPost = allPosts.at(currentPostIndex + 1);
+
+  //     if (prevPost) {
+  //       return `<a href="${prevPost.url}">${prevPost.data.title}</a>`;
+  //     }
+
+  //     return "";
+  //   },
+  // );
+
   return {
     dir: {
       input: "src",

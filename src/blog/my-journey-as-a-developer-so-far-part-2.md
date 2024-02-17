@@ -9,7 +9,7 @@ tags: post
 
 I ended my [previous post]({% post_url "my-journey-as-a-developer-so-far" %}) by mentioning that I got to work at a company on a contract basis, and I had created accounts in several freelancing websites and that I am hoping for the best. Well, in this post, I will cover what happened after that and where I am today. The goal for this post is that when I read this in the future, I will be able to see how far I have progressed in life and what should be the next step going forward.
 
-TLDR; It went well, and I am currently employed as a full-stack developer and earning pretty well.
+TL;DR It went well, and I am currently employed as a full-stack developer and earning pretty well.
 
 The journey goes like this...
 

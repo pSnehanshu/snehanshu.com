@@ -93,7 +93,7 @@
     {
       "name": "OCPP",
       "icon": "/assets/media/skills/ocpp.png",
-      "link": "https://www.openchargealliance.org/protocols/ocpp-201/"
+      "link": "https://openchargealliance.org/protocols/open-charge-point-protocol/"
     },
     {
       "name": "OCPI",
